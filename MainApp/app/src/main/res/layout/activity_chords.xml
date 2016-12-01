@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_chords"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="mixtape_mam.mainapp.chords"
+    tools:ignore="ExtraText">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/chords2"
+        android:ems="10"
+        android:id="@+id/chords_header"
+        android:inputType="none"
+        android:textSize="24sp"
+        android:contentDescription="@string/chords_header"
+        android:layout_marginRight="284dp"
+        android:layout_marginEnd="284dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:text="@string/x2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:id="@+id/button7"
+        android:onClick="gotoMain" />
+
+    <Button
+        android:text="@string/notes2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button6"
+        android:onClick="gotoNotes"
+        android:layout_alignParentBottom="true"
+        android:layout_toLeftOf="@+id/button5"
+        android:layout_toStartOf="@+id/button5" />
+
+    <Button
+        android:text="@string/sharp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button5"
+        android:onClick="gotoSharp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignLeft="@+id/chords_header"
+        android:layout_alignStart="@+id/chords_header" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/piano_chords"
+        android:id="@+id/imageView5"
+        android:layout_below="@+id/button7"
+        android:layout_centerHorizontal="true"
+        android:contentDescription="@string/piano_chords" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/key_labels"
+        android:layout_marginTop="21dp"
+        android:id="@+id/imageView7"
+        android:layout_below="@+id/imageView5"
+        android:layout_toLeftOf="@+id/chords_header"
+        android:layout_toStartOf="@+id/chords_header"
+        android:contentDescription="@string/key_labels" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/key_labels"
+        android:id="@+id/imageView6"
+        android:layout_alignTop="@+id/imageView7"
+        android:layout_toRightOf="@+id/imageView7"
+        android:layout_toEndOf="@+id/imageView7"
+        android:contentDescription="@string/key_labels2" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/a_chord"
+        android:id="@+id/imageView8"
+        android:layout_below="@+id/imageView7"
+        android:layout_toLeftOf="@+id/imageView6"
+        android:layout_toStartOf="@+id/imageView6"
+        android:contentDescription="@string/a_chord" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/b_chord"
+        android:layout_marginTop="22dp"
+        android:id="@+id/imageView9"
+        android:layout_below="@+id/imageView8"
+        android:layout_alignRight="@+id/imageView8"
+        android:layout_alignEnd="@+id/imageView8"
+        android:contentDescription="@string/b_chord" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/c_chord"
+        android:layout_marginTop="29dp"
+        android:id="@+id/imageView10"
+        android:layout_below="@+id/imageView9"
+        android:layout_alignRight="@+id/imageView9"
+        android:layout_alignEnd="@+id/imageView9"
+        android:contentDescription="@string/c_chord" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/d_chord"
+        android:layout_marginBottom="14dp"
+        android:id="@+id/imageView11"
+        android:layout_above="@+id/button6"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_toLeftOf="@+id/button5"
+        android:layout_toStartOf="@+id/button5"
+        android:contentDescription="@string/d_chord" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/e_chord"
+        android:layout_below="@+id/imageView6"
+        android:layout_toRightOf="@+id/imageView8"
+        android:layout_marginTop="63dp"
+        android:id="@+id/imageView12"
+        android:contentDescription="@string/e_chord"
+        tools:ignore="RtlHardcoded" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/f_chord"
+        android:id="@+id/imageView13"
+        android:layout_below="@+id/imageView12"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="19dp"
+        android:layout_toRightOf="@+id/imageView9"
+        android:layout_toEndOf="@+id/imageView9"
+        android:contentDescription="@string/f_chord" />
+    />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/g_chord"
+        android:id="@+id/imageView14"
+        android:layout_below="@+id/imageView13"
+        android:layout_toRightOf="@+id/imageView10"
+        android:layout_toEndOf="@+id/imageView10"
+        android:layout_marginTop="34dp"
+        android:contentDescription="@string/g_chord" />
+    />
+
+</RelativeLayout>
